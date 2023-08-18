@@ -1,0 +1,138 @@
+html {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+body {
+  background-color: rgb(213, 213, 213);
+}
+
+.calculatorContainer {
+  background-color: white;
+  width: 250px;
+  height: 315px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9ceef9;
+  width: 220px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.keysContainer {
+  width: 220px;
+  border-radius: 25px;
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.keysContainer * {
+  color: slategray;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.digitsContainer {
+  width: 100px;
+  flex: 3;
+  align-self: center;
+  height: 185px;
+  border-radius: 25px;
+  display: flex;
+  gap: 3px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+}
+
+.digitButton {
+  background-color: #ffbafd;
+  flex: 1;
+  min-width: 35px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.digitButton:last-child {
+  max-width: 38px;
+}
+
+.operationsContainer {
+  flex: 2;
+  width: 100px;
+  height: 200px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.operationsContainer > * {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+/* .systemButtons {
+  display: flex;
+} */
+
+.systemButton {
+  font-size: 13px;
+  color: snow;
+  background-color: #ffb6b6;
+  flex: 1;
+  padding: 12px;
+  min-width: 25px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* .operationButtons {
+  display: flex;
+} */
+.operationButton {
+  background-color: #fdff9a;
+  flex: 1;
+  min-width: 32px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.equalButtonContainer {
+  justify-content: center;
+}
+.equalsButton {
+  background-color: #d9d9d9;
+  flex: 1;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
